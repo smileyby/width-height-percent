@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>元素自身宽高 百分比测试</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .outer {
+            width: 500px;
+            height: 300px;
+            background-color: #a95454;
+        }
+
+        .inner {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            background-color: #444465;
+        }
+
+        p {
+            position: fixed;
+            width: 50%;
+            height: 50%;
+            background-color: #afafaf;
+        }
+    </style>
+</head>
+<body>
+<div class="outer">
+    <div class="inner">
+        <p>我是P标签</p>
+    </div>
+</div>
+</body>
+</html>
